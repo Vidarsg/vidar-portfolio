@@ -8,18 +8,18 @@ module.exports = {
   ],
   
   theme: {
-  extend: {
-    colors: {
-      background: "#18181b",   // neutral-900 (very dark, not pitch black)
-      text: "#f3f4f6",         // gray-100
-      accent: "#3b82f6",       // blue-500 (solid blue)
-      subtext: "#6b7280",      // gray-500
-      white: "#fff",
-      black: "#000",
-      transparent: "transparent",
-      current: "currentColor",
+    extend: {
+      colors: {
+        background: "#0f172a", // slate-900
+        text: "#e5e7eb",       // gray-200
+        subtext: "#94a3b8",    // slate-400
+        accent: "#38bdf8",     // sky-400
+        white: "#fff",
+        black: "#000",
+        transparent: "transparent",
+        current: "currentColor",
+      },
     },
-  },
   },
 
   plugins: [],
