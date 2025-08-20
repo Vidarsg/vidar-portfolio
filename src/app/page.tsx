@@ -74,17 +74,6 @@ export default function Home() {
                   {t("Ulstadløkkveien 6, 7067 Trondheim", "Ulstadløkkveien 6, 7067 Trondheim")}
                 </a>
               </li>
-              <li>
-                <span className="text-text">GitHub:</span>{" "}
-                <a
-                  className="hover:text-accent underline"
-                  href="https://github.com/Vidarsg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/Vidarsg
-                </a>
-              </li>
             </ul>
           </motion.div>
           <div className="hidden lg:block lg:w-[40%]" />
@@ -116,7 +105,6 @@ export default function Home() {
                 "Figma",
                 "SQL/Firebase/PostgreSQL",
                 "Docker",
-                "Assembly",
                 "Linux",
               ].map((s) => (
                 <span
@@ -249,7 +237,7 @@ export default function Home() {
 
       {/* CONTACT */}
       <section id="contact" className="py-14">
-        <div className="max-w-7xl mx-auto flex items-center gap-8 px-4 lg:px-6">
+        <div className="max-w-6xl mx-auto flex items-center gap-8 px-6 lg:px-8">
           <div className="hidden lg:block lg:w-[40%]" />
           <motion.div
             className="w-full lg:w-[60%] lg:text-right"
@@ -258,21 +246,21 @@ export default function Home() {
             transition={{ duration: 0.55 }}
             viewport={{ once: false, amount: 0.4 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-accent">{t("Kontakt", "Contact")}</h2>
-            <p className="text-lg text-subtext mb-6">
-              {t("Referanser oppgis ved etterspørsel.", "References available upon request.")}
-            </p>
+            <h2 className="text-3xl font-bold mb-4 text-accent">Kontakt</h2>
+            <p className="text-lg text-subtext mb-6">Referanser oppgis ved etterspørsel.</p>
 
             <div className="flex flex-col gap-3 lg:items-end">
               <a href="mailto:vidar-s-g@hotmail.com" className="underline hover:text-accent">vidar-s-g@hotmail.com</a>
               <a href="tel:+4741295488" className="hover:text-accent">(+47) 412 95 488</a>
+              <a href="https://www.linkedin.com/in/vidar-strand-gladsø-b8099837b/" target="_blank" rel="noopener noreferrer" className="hover:text-accent">LinkedIn</a>
+              <a href="https://github.com/Vidarsg" target="_blank" rel="noopener noreferrer" className="hover:text-accent">Github</a>
             </div>
           </motion.div>
         </div>
       </section>
 
       <footer className="text-center py-6 px-6 lg:px-8 text-subtext text-sm max-w-7xl mx-auto">
-        © {new Date().getFullYear()} Vidar. Built with Next.js & Tailwind CSS. Deployed on Vercel.
+        © {new Date().getFullYear()} Vidar. Built with Next.js & Tailwind. Deployed on Vercel.
       </footer>
     </main>
   );
